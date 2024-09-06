@@ -1,0 +1,61 @@
+Created: `19-Aug-2024`, `16:36`
+Tags: [[SC1004 - Linear Algebra For Computing]]
+
+# key points
+- square matrix = m = n(same nnumber of rows as columns)
+- Trace: sum of elements in leading diagonal
+- Unit or identity matrix
+	- diagonal matrix with 1s, rest is 0
+- Transpose matrix
+	- mxn becomes nxm
+- Symmetric matrix
+	- Transposed matrix is the same as the normal matrix
+	- diagonal elements do not change
+	- other elements are same along the diagonal i assume
+- equality
+- additiona and subtraction
+- multiply by scalar
+- properties
+	- A+B = B+A
+	- s(A+B) = sA + sB
+	- $(A+B)^T=A^T+B^T$
+- Column representation
+	- each column of  a matrix can be represented as a vector
+	- each element in a row of vectors represents a column of matrix
+- Row representation
+	- each row can be repreesnted as a vector
+	- each element in a column of vectors represents a row of matrix
+- Block matrices
+	- a matrix of matrices is called a block matrix
+	- sub-matrices
+	- ![[Pasted image 20240819165247.png]]
+- a 1by x matrix can also be called a vector
+	- 1x3 i s a row vector
+	- 2x1 is a column vector
+
+# Matrix multiplication
+- the middle 2 numbers must be the same
+	- 1x3 * 3X1 will give you 1x1
+	- ![[1_YGcMQSr0ge_DGn96WnEkZw.png]]
+- Other lawsa
+- matrix x Identity matrix = matrix
+- $(AB)^T=B^TA^T$
+	- b and a are reversed mf
+- $(A+B)^T=A^T+B^T$
+	- plussing is bussing
+- You can partially calculate matrix mult if youre only interested in a certain row
+	- ![[Pasted image 20240819170819.png]]just pull out the row / column you neee
+- Matrix product as linear combinations
+	- an mxn matrix times a nx1 will equate a combination of column vectors where the coefficients are elements of x
+	- ![[Pasted image 20240819171809.png]]
+- Inverse matrix
+	- AB = BA = I
+	- if there is no B for the A, then the matrix is singular and has no inverse
+	- ![[Pasted image 20240819171923.png]]
+	- to find inverse:
+		- 1/ad-bc * swapped a and d, -b -c elements
+		- ad-bc is called the determinant
+	- If A and B are invertible and of the same size,
+		- $(AB)^{-1}=B^{-1}A^{-1}$
+	- If A is invertible, $A^T$ is invertible, and $(A^T)^{-1}=(A^{-1})^T$
+	- whatever the f this is ![[Pasted image 20240819172507.png]]

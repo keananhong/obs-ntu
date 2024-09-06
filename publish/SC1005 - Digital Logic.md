@@ -1,0 +1,9 @@
+Week 1:
+[[converting between bases]]
+[[digi logic]]
+[[logic operations]]
+[[boolean algebra]]
+[[implementing circuits]]
+[[single variable theorem]]
+[[laws of logic]]
+[[nand and nor do everything]]
